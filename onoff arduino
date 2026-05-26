@@ -1,0 +1,16 @@
+
+#define soslight 13
+#define sosswitch 2
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(soslight, OUTPUT);
+  pinMode(sosswitch,INPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+              if(digitalRead(sosswitch)==HIGH)
+                digitalWrite(soslight,LOW);
+  			  else
+                digitalWrite(soslight,HIGH);
+}
